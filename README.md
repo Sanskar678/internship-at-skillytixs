@@ -54,34 +54,28 @@ Loaded the dataset using `pandas.read_csv()` with `sep='\t'` since it was tab-se
 ### 5. **Standardize Date Format**
 - Converted Dt_Customer from string to datetime object:
 
-python
-Copy
-Edit
-df['Dt_Customer'] = pd.to_datetime(df['Dt_Customer'], format='%d-%m-%Y')
+  ```python
+  df['Dt_Customer'] = pd.to_datetime(df['Dt_Customer'], format='%d-%m-%Y')
 
 ---
 
 ### 6. **Clean Categorical Variables**
-Standardized text format (removed spaces, fixed capitalization) in:
+- Standardized text format (removed spaces, fixed capitalization) in:
 
 Education
 
 Marital_Status
 
-python
-Copy
-Edit
-df['Education'] = df['Education'].str.strip().str.title()
-df['Marital_Status'] = df['Marital_Status'].str.strip().str.title()
+    ```python
+    df['Education'] = df['Education'].str.strip().str.title()
+    df['Marital_Status'] = df['Marital_Status'].str.strip().str.title()
 
 ---
 
 ### 7. **Export Cleaned Dataset**
 Saved the cleaned DataFrame to a CSV file:
 
-python
-Copy
-Edit
-df.to_csv("cleaned_marketing_campaign.csv", index=False)
+    ```python
+    df.to_csv("cleaned_marketing_campaign.csv", index=False)
 
 ---
