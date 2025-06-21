@@ -52,7 +52,7 @@ Loaded the dataset using `pandas.read_csv()` with `sep='\t'` since it was tab-se
 ---
   
 ### 5. **Standardize Date Format**
-Converted Dt_Customer from string to datetime object:
+- Converted Dt_Customer from string to datetime object:
 
 python
 Copy
