@@ -67,8 +67,8 @@ Education
 Marital_Status
 
     ```python
-    df['Education'] = df['Education'].str.strip().str.title()
-    df['Marital_Status'] = df['Marital_Status'].str.strip().str.title()
+     df['Education'] = df['Education'].str.strip().str.title()
+     df['Marital_Status'] = df['Marital_Status'].str.strip().str.title()
 
 ---
 
